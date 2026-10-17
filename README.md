@@ -12,6 +12,22 @@
 
 ## 安装
 
+### 方式一（最简单）：把仓库地址丢给 Agent，让它自己装
+
+打开你的 Agent（Codex / Claude Code / WorkBuddy / 豆包工作 / ZCode 等），把仓库地址和这句话直接发给它：
+
+> 把 https://github.com/YUMIGUTOUTANG/GuTou-Work_Skills 这个仓库里的技能安装到你的技能目录，装好后告诉我怎么触发。
+
+只想装某一个技能时：
+
+> 把 https://github.com/YUMIGUTOUTANG/GuTou-Work_Skills 里的 job-project-radar 技能装到你的技能目录。
+
+Agent 会自己完成克隆与目录摆放；装好后**新开一个会话**（或重启客户端）即可使用。
+如果客户端自带技能安装器（如 Codex 的 `$skill-installer`），也可以直接给它技能目录链接：
+`https://github.com/YUMIGUTOUTANG/GuTou-Work_Skills/tree/main/job-project-radar`
+
+### 方式二：手动克隆 + 复制 / 链接
+
 先克隆本仓库：
 
 ```bash
@@ -59,6 +75,8 @@ mklink /J "%USERPROFILE%\.agents\skills\job-project-radar" "D:\path\to\GuTou-Wor
 ## English Summary
 
 **GuTou-Work_Skills** is an open-source collection of agent skills for tech job seekers. Each skill lives in its own directory and follows the Agent Skills standard (`SKILL.md`), compatible with Codex, Claude Code, WorkBuddy, Doubao Work, ZCode and more.
+
+**Easiest install**: paste this repository URL into your coding agent and ask it to install the skill — it will clone and place the folder for you. Manual clone instructions above.
 
 Current skills:
 

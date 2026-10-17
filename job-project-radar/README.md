@@ -47,7 +47,13 @@
 
 ## 安装
 
-本技能是 [GuTou-Work_Skills](../README.md) 技能集中的一个。先克隆技能集，再把 `job-project-radar` 目录复制（或链接）到对应客户端的技能目录：
+**最简单的方式**：打开你的 Agent（Codex / Claude Code / WorkBuddy / 豆包工作 / ZCode 等），直接发这句话——
+
+> 把 https://github.com/YUMIGUTOUTANG/GuTou-Work_Skills 里的 job-project-radar 技能装到你的技能目录，装好告诉我怎么触发。
+
+Agent 会自己完成克隆与安装（若它没有文件写入权限，改用下面的手动方式）。装好后**新开一个会话**（或重启客户端）即可触发。
+
+**手动方式**：本技能是 [GuTou-Work_Skills](../README.md) 技能集中的一个。克隆技能集，把 `job-project-radar` 目录复制（或链接）到对应客户端的技能目录：
 
 ```bash
 git clone https://github.com/YUMIGUTOUTANG/GuTou-Work_Skills.git
